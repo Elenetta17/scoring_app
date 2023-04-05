@@ -27,7 +27,7 @@ def meteo():
     for prev in content["list"]:
         datetime = prev['dt'] * 1000
         temperature = prev['main']['temp'] - 273.15 # Conversion de Kelvin en °c
-        temperature = round(temperature, 2)
+        temperature = np.round(temperature, 2)
         data.append([datetime, temperature])
     return jsonify({
       'status': 'ok', 
