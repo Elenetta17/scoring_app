@@ -13,7 +13,7 @@ app.app_context().push()
 def predict():
     if request.method == 'POST':
         client_id = request.get_data()
-        data = pd.read_csv('../X_test_reduced.csv', index_col=0)
+        data = pd.read_csv('test_kaggle_reduced.csv', index_col=0)
         loaded_model = pickle.load(open('model.pkl', 'rb'))
         result =  loaded_model.predict_proba(data.loc[int(client_id)].values.reshape(1,-1))
         proba_remboursement = np.int(result[0][0]*100)
