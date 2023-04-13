@@ -16,7 +16,7 @@ def predict():
         data = pd.read_csv('test_kaggle_reduced.csv', index_col=0)
         loaded_model = pickle.load(open('model.pkl', 'rb'))
         result =  loaded_model.predict_proba(data.loc[int(client_id)].values.reshape(1,-1))
-        proba_remboursement = np.int(result[0][0]*100)
+        proba_remboursement = np.int64(result[0][0]*100)
         return str(proba_remboursement)
 
 if __name__ == "__main__":
