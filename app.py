@@ -5,7 +5,7 @@ import numpy as np
 import pandas as pd
 import pickle
 
-# app instanciation
+# app instantiation
 app = Flask(__name__)
 
 # push context while testing
@@ -13,7 +13,7 @@ app.app_context().push()
 
 
 # prediction function
-@app.route("/predict", methods=["POST", "GET"])
+@app.route('/predict', methods=["POST", "GET"])
 def predict():
     if request.method == 'POST':
         client_id = request.get_data()  # get client_id
