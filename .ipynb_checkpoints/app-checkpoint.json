@@ -2,7 +2,7 @@
   "environments": {
     "test": {
       "scripts": {
-        "test": "tests/tests"
+        "test": "python -m unittest tests/tests.py"
       }
     }
   }
