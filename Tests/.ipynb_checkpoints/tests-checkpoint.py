@@ -3,7 +3,7 @@ import json
 import requests
 import unittest
 
-url = "http://127.0.0.1:3000/predict"
+url = "https://elena-openclassrooms-predict.herokuapp.com/predict"
 
 # testing the value of the prediction
 class TestPrediction(unittest.TestCase):
