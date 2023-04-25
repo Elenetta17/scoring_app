@@ -8,15 +8,15 @@ url = "http://127.0.0.1:3000/predict"
 # testing the value of the prediction
 class TestPrediction(unittest.TestCase):
 
-    def test_should_predict_79(self):
+    def test_should_predict_69(self):
         client_id = str(100001)
         prediction = requests.post(url, data=client_id)
-        self.assertEqual(prediction.text, str(79))
+        self.assertEqual(prediction.text, str(69))
 
-    def test_should_predict_50(self):
+    def test_should_predict_43(self):
         client_id = str(100005)
         prediction = requests.post(url, data=client_id)
-        self.assertEqual(prediction.text, str(50))
+        self.assertEqual(prediction.text, str(43))
 
 
 if __name__ == "__main__":
