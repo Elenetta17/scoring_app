@@ -8,7 +8,7 @@ https://elena-openclassrooms-predict.herokuapp.com/
 Ce depot contient une application à des fins éducatives et répondant au concours Kaggle :
 "Risque de défaut de crédit à domicile" (https://www.kaggle.com/c/home-credit-default-risk)
 
-L'objectif principal de cette application est de prédire la probabilité de remboursement d'un crédit immobilier.
+L'objectif principal de cette application est de prédire la probabilité de remboursement d'un crédit.
 
 
 ## Implementation.
