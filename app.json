@@ -2,6 +2,7 @@
   "environments": {
     "test": {
       "scripts": {
+        "test-setup": "pip install unittest",
         "test": "python -m unittest tests/tests.py"
       }
     }
